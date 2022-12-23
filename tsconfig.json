@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2017",
+    "lib": [
+      "es6"
+    ],
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "paths": {
+      "@views/*": [
+        "./src/views/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@errors/*": [
+        "./src/errors/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@database/*": [
+        "./src/database/*"
+      ],
+      "@models/*": [
+        "./src/database/mongoose/models/*"
+      ],
+      "@repositories/*": [
+        "./src/database/mongoose/repositories/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    /* JavaScript Support */
+    "allowJs": true,
+    /* Emit */
+    "outDir": "./dist",
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
